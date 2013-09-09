@@ -13,4 +13,13 @@ describe 'myface::default' do
     user("myface").must_exist
   end
 
+  # Verify that MySQL is started and enabled:
+  it "Starts the mysql daemon" do
+    service(node['mysql']['service_name']).must_be_running
+  end
+
+  it "Enables the mysql daemon" do
+    service(node['mysql']['service_name']).must_be_enabled
+  end
+
 end

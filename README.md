@@ -13,6 +13,7 @@ None (yet)
 # Recipes
 default.rb
  - Creates myface user
+ - install MySQL
 
 # Author
 
